@@ -1,4 +1,5 @@
-/* base styles */
+/* Base Styles */
+
 * {
   box-sizing: border-box;
 }
@@ -10,19 +11,16 @@ html {
 body {
   text-align: center;
   line-height: 1.5;
-  margin: 0 auto;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
   width: 100%;
+  padding: 13px;
 }
 
-.wrapper {
-  width: 89%;
-  margin: 0 auto;
-}
-
-.main-header {
+.main-header, #contact  {
   background-color: rgb(245, 245, 242);
   padding: 13px;
   
@@ -35,28 +33,18 @@ img {
   margin: 5px;
   text-transform: uppercase;
   
+  
 }
 
-.portfolio p {
+p {
   margin: 3px 0 21px 0;
   width: 89%;
   display: inline-block;
+  hyphens: auto;
 }
 
-#contact {
-  background-color: rgb(245, 245, 242);
-  padding: 13px;
-  
-  
-
-}
-
-h1 {
-  margin-bottom: 34px;
-}
-
-h2 {
-  margin: 34px;
+h1, h2, h3 {
+  margin: 21px;
 }
 
 
@@ -67,14 +55,7 @@ ul {
 
 .profile-img {
   max-width: 210px;
-  padding-top: 21px;
-}
-
-.intro {
- margin: 0 8px;
- padding: 21px 0 34px;
- 
- hyphens: auto;
+  padding: 21px;
 }
 
 footer {
@@ -94,3 +75,23 @@ footer {
   text-transform: uppercase;
   margin: 13px;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .container, .main-nav {
+    display: flex;
+  }
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    background-color: rgb(245, 245, 242);
+  }
+  
+
+ 
