@@ -13,6 +13,7 @@ body {
   line-height: 1.5;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+ 
 }
 
 img {
@@ -24,6 +25,10 @@ img {
   background-color: rgb(245, 245, 242);
   padding: 13px;
   
+}
+
+#contact {
+  margin-top: 21px;
 }
 
 .main-nav li {
@@ -54,6 +59,7 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 a:hover {
@@ -90,15 +96,45 @@ footer {
   margin: 13px;
 }
 
+#portfolio {
+  padding-top: 13px;
+}
+
+span {
+  font-weight: bold;
+  color: red;
+}
+
+.skills-container {
+  background: linear-gradient(90deg, rgb(247, 249, 247), rgb(227, 217, 184));
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.21rem;
+  
+}
+
+.my-skills li {
+  list-style: none;
+  padding: 2px;
+  margin: 2px;
+  text-transform: uppercase;
+}
+
+.skill-color {
+  color: rgb(187, 109, 30);
+}
+
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-  .container, .main-nav, .intro-container, .portfolio-container, .foot-container, .foot-main-nav {
+  .container, .main-nav, .intro-container, .portfolio-container, .foot-container, .foot-main-nav, .skills-container, .my-skills {
     display: flex;
   
   }
 
-   .container {
+
+
+      .container {
     flex-direction: column;
     align-items: center;
   }
@@ -151,9 +187,17 @@ footer {
   padding: 8px;
   margin: 5px;
   text-transform: uppercase;
-  
-  
-  
+
+}
+
+.skills-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.my-skills li {
+  padding: 5px;
+  margin: 5px;
 }
 
 
@@ -162,6 +206,29 @@ footer {
  @media screen and (max-width: 767px) {
   .foot-container {
     display: none;
+  }
+
+ }
+
+ @media screen and (min-width: 1024px) {
+ 
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h1 {
+    margin-left: 0px;
+    padding: 8px;
+  }
+ 
+   .port {
+    flex: 1 33%;
+  }
+
+  .my-skills li {
+    padding: 8px;
+    margin: 8px;
   }
 
  }
